@@ -7,14 +7,36 @@
 //
 
 import UIKit
-
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+import MapKit
+class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate
+{
+    
+    @IBOutlet weak var mapView: MKMapView!
+    let locationManager = CLLocationManager()
+    var currentPlace: CLLocation!
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        locationManager.requestWhenInUseAuthorization()
+        mapView.showsUserLocation = true
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
     }
-
-
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        currentPlace = locations[0]
+    }
+    @IBAction func zoomButton(_ sender: Any) {
+        let center = currentPlace.coordinate
+        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        let region = MKCoordinateRegion(center: center, span: span)
+        mapView.setRegion(region, animated: true)
+    }
 }
+    
+
+
+
+
+
 
