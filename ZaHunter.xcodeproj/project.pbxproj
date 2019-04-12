@@ -12,6 +12,7 @@
 		6A432F312255403900104B8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A432F2F2255403900104B8C /* Main.storyboard */; };
 		6A432F332255403C00104B8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A432F322255403C00104B8C /* Assets.xcassets */; };
 		6A432F362255403C00104B8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A432F342255403C00104B8C /* LaunchScreen.storyboard */; };
+		6A8C088C22611D2C00DF4097 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A8C088B22611D2C00DF4097 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6A432F322255403C00104B8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A432F352255403C00104B8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A432F372255403C00104B8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A8C088B22611D2C00DF4097 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				6A432F2B2255403900104B8C /* AppDelegate.swift */,
 				6A432F2D2255403900104B8C /* ViewController.swift */,
 				6A432F2F2255403900104B8C /* Main.storyboard */,
+				6A8C088B22611D2C00DF4097 /* Launch Screen.storyboard */,
 				6A432F322255403C00104B8C /* Assets.xcassets */,
 				6A432F342255403C00104B8C /* LaunchScreen.storyboard */,
 				6A432F372255403C00104B8C /* Info.plist */,
@@ -124,6 +127,7 @@
 			files = (
 				6A432F362255403C00104B8C /* LaunchScreen.storyboard in Resources */,
 				6A432F332255403C00104B8C /* Assets.xcassets in Resources */,
+				6A8C088C22611D2C00DF4097 /* Launch Screen.storyboard in Resources */,
 				6A432F312255403900104B8C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

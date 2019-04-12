@@ -39,7 +39,11 @@
                         </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="search" id="nGG-uQ-sWm"/>
-                            <barButtonItem systemItem="trash" id="sqo-I3-BHk"/>
+                            <barButtonItem systemItem="trash" id="sqo-I3-BHk">
+                                <connections>
+                                    <action selector="closeAppButton:" destination="shA-We-XFU" id="G79-oT-e4D"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>

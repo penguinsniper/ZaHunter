@@ -32,6 +32,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         let region = MKCoordinateRegion(center: center, span: span)
         mapView.setRegion(region, animated: true)
     }
+    @IBAction func closeAppButton(_ sender: Any) {
+        exit(0)
+    }
+    
 }
     
 
